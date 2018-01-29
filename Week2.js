@@ -1,55 +1,46 @@
-// Object Creation Functions
-function showRenter(){
+// Object Creation Function
+function showRenter()
+{
 	var renter = {};
 	renter.fName = 'Nathan';
 	renter.lName = 'Ford';
 	renter.occupation = 'Mastermind';
 	renter.phoneNumber;
+
 	var person = 'First Name: ' + renter.fName + ' Last Name: ' + renter.lName + ' Occupation: ' + renter.occupation + ' Phone Number: ' + renter.phoneNumber; 
-	document.write(person);
-}
+	document.getElementById('person').innerHTML +=person;
+};
 
 
 
-//Inheritance
+//Inheritance, methods, properties
 
 
-function cats(name, sound, color){
-	this.type = {
-		color,
-		sound
+function cats(){
+	function cat(type, sound, pounce, name){
+		this.type = type;
+		this.sound = sound;
+		this.pounce = pounce;
+		this.name = name;
 	};
-	this.name = name;
+	cat();
+	//Instantiation of cat
+	var tabby = new cat ('house', 'meow', 'jump', 'Boots');
+	var lion = new cat ('wild', 'rawr', 'stalk', 'Nala');
+	var tiger = new cat ('wild', 'rawr', 'pounce', 'Shere Kahn')
+	var firstline = 'I have three cats, '+ tabby.name + ', ' + lion.name + ', and ' + tiger.name + '. ';
+
+	tabby.play = function() 
+		{
+			return this.sound + ' and ' + this.pounce;
+		}
+	tiger.play = function() 
+		{
+			return this.sound + ' and ' + this.pounce;
+		}
+
+	var secondline = tabby.name + ' likes to ' + tabby.play() + ' but ' + tiger.name + ' likes to ' + tiger.play() + '.';
+	document.getElementById('cat').innerHTML +=  firstline + secondline;
 };
-cats.prototype.attributes = function() {
-	alert('Hi, I\'m ' + this.name + '.');
-};
 
-function tabby(name, sound, color, habitat) {
-	cats.call(this, name, sound, color);
-	this.habitat = 'home';
-}
-console.log(tabby.habitat);
-
-
-
-
-
-var animal = function(name, sound) {
-	this.name = name;
-	this.sound = sound;
-}
-
-animal.prototype.anamalName = function() {
-
-}
-var cat = new animal();
-cat.name = 'Boots';
-
-animal.test = 'bar';
-
-var dog = new animal();
-dog.name = 'loki';
-
-console.log(cat.name, dog.test, cat.sound, dog.name, cat.test, animal.test);
 

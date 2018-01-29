@@ -1,67 +1,87 @@
+//Loops Conditional Statements, Functions, Variables, Parameters
 
-
-for (i=0; i < 4; i++) {
-	console.log("Hello World")
-}
-
-var x = 1;
-while (x < 4) {
-	console.log("Hello Planet")
-	x++;
-}
-
-var y =1;
-do {
-	console.log("Hello Solar System")
-	y++;
-}
-while (y <3);
-
-var z = 4;
-if (z > 5) {
-	console.log("Hello Star")
-} 
-else {
-	console.log("Hello Sun")
+function forLoop(){
+	for (i = 1; i < 4; i++) {
+		document.getElementById('forLoop').innerHTML += "Hello World, ";
+	}
 };
 
-
-if (y > 3) {
-	console.log("Blue")
-} 
-else if (y = 3) {
-	console.log('Black')
-}
-else {
-	console.log('Green')
+function whileLoop(i){
+	i = 3;
+	while (i < 4) {
+		document.getElementById('whileLoop').innerHTML +="Hello Planet, ";
+		i++;
+	}
 };
 
-var color1 = 'Yellow'
-var color2 = 'Red'
+function doWhileLoop(i) {
+	i = 1;
+	do {
+		document.getElementById('doWhileLoop').innerHTML +="Hello Solar System, ";
+		i++;
+	}
+	while (i <3);
+};
 
-function color(){
+function ifElseLoop(i){
+	i = 2;
+	if (i > 5) {
+		document.getElementById('ifElseLoop').innerHTML +="Hello Star, ";
+	} 
+	else {
+		document.getElementById('ifElseLoop').innerHTML +="Hello Sun, ";
+	};
+};
+
+function ifElseIfLoop(i){
+	i = 5;
+	if (i < 3) {
+		document.getElementById('ifElseIfLoop').innerHTML +='Blue, ';
+	} 
+	else if (i = 3) {
+		document.getElementById('ifElseIfLoop').innerHTML +='Black, ';
+	}
+	else {
+		document.getElementById('ifElseIfLoop').innerHTML +='Green, ';
+	};
+};
+
+var color1;
+var color2;
+
+function switchStatement(color1, color2){
+
+	color1 = 'Red';
+	color2 = 'Yellow';
 	switch(color2){
 		case 'Yellow':
-		console.log('The color is '+ color1);
+		document.getElementById('switchStatement').innerHTML +=('The color is ' + color1); 
 		break;
 		case 'Red':
-		console.log('The color is '+ color2);
+		document.getElementById('switchStatement').innerHTML +=('The color is ' + color2); 
 		break;
 		default:
-		console.log('There is no color.');
-					}
-				}
+		document.getElementById('switchStatement').innerHTML +='There is no color.';
+	}
+};
 
-var new_array = ['Leaf', 'Tree', 'Flower', 'Seed', 'Dirt', 'Water'];
+//Arrays, Associative Arrays
 
-console.log(new_array[3]);
+function firstArray(i){
+	var new_array = ['Leaf', 'Tree', 'Flower', 'Seed', 'Dirt', 'Water'];
+	for (i = 0; i < new_array.length; i++)
 
-var second_array = [];
-second_array[0] = 'fish';
-second_array[1] = 'shell';
-second_array[2] = 'sand';
+		document.getElementById('firstArray').innerHTML +=('Array item ' + i + ' = ' + new_array[i] + ', ');
+};
 
+function assocArray(i){
 
-var t = second_array.length; 
+	var second_array = [];
+	second_array[0] = 'Fish';
+	second_array[1] = 'Shell';
+	second_array[2] = 'Sand';
+	second_array[4] = 'Water';
+	for (i = 0; i < second_array.length; i++)
 
-console.log(t);
+		document.getElementById('assocArray').innerHTML +=('Array item ' + i + ' = ' + second_array[i] + ', ');
+};

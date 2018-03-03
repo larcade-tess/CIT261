@@ -1,20 +1,22 @@
-<!-- Week 6 Manipulating CSS Class Properties Using JavaScript -->
+<!-- Week 6 Manipulating CSS Class Properties Using JavaScript Creating CSS3 Transitions and Animations in CSS and triggering them with JavaScript-->
 
 <!DOCTYPE HTML>
 <html>
-<body id = 'background'>
+<body class = 'background'>
 	<header>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</header>
 	<main>
 		<!-- Change Color -->
 		<div>
-			<button id='color' onclick="changeColor()">What Color am I?</button>
+			<button class='color' onclick="changeColor()">What Color am I?</button>
 		</div>
-
+		<div class = 'color'>
+			<p class = 'color'>Me Too!</p>
+		</div>
 		<!-- Change Style -->
 		<div>
-			<button id='bold' onclick="makeBold()">Be Bold</button>
+			<button class='bold' onclick="makeBold()">Be Bold</button>
 		</div>
 		<!-- Change Background Color -->
 		<div>
@@ -24,9 +26,20 @@
 		<div>
 			<button onclick="reset()">Reset</button>
 		</div>
+
+		<!-- Transition-->
+		<div id = 'box'>
+		</div>
+		
+		<!-- Animation-->
+		<div id = 'boxA'>
+			<h4>Wingardium leviosa</h4>
+		</div>
+
 	</main>
 	<footer>
-		<script src="week6.js"></script>
+		
 	</footer>
 </body>
+<script src="week6.js"></script>
 </html>

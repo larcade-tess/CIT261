@@ -1,0 +1,105 @@
+.main {
+	background-image: url('cookie.jpg');
+	background-repeat:none;
+	height:330px;
+	width:500px;
+	font-weight:700;
+}
+#box {
+	transition-property: background-color;
+	transition-duration: 2s;
+	transition-delay: 4ms;
+	transition-timing-function: ease;
+	margin-top:30px;
+	height:100px;
+	width:100px;
+	background-color:lightgreen;
+}
+.color div{
+	height:30px;
+	width:30px;
+
+}
+.transform { 
+	transition: all 2s ease;
+}
+.transform-active {
+	background-color: #45CEE0;
+	height: 200px;
+	width: 200px;
+}
+#boxA {
+	background-color: #218D9B;
+	height: 100px;
+	width: 100px;
+	position:absolute;
+	/*	top:300px;*/
+	left:400px;
+}
+#boxB {
+	background-color: #218B9A;
+	height: 100px;
+	width: 100px;
+}
+#boxC {
+	background-color: #213D9A;
+	height: 100px;
+	width: 270px;
+}
+#boxD {
+	background-color: #233C3A;
+	height: 100px;
+	width: 100px;
+}
+
+#boxE {
+	background-color: #216A3D;
+	height: 100px;
+	width: 100px;
+}
+
+#boxF {
+	padding:30px;
+}
+
+#boxG {
+	background-color: #253C2A;
+	height: 100px;
+	width: 100px;
+	left:200px;
+}
+
+#input {
+	margin:40px;
+}
+.transform {
+	animation: anni 4s infinite;
+}
+@keyframes anni {
+	0% {top: 300px;}
+	10% {top:275px;}
+	20% {top: 250px;}
+	30% {top: 225px;}
+	40% {top: 200px;}
+	50% {top: 175px;}
+	60% {top: 150px;}
+	70% {top: 125px;}
+	80% {top: 100px;}
+	90% {top: 75px;}
+	100% {top: 50px;}
+}
+
+#canvas {
+	border:1px solid black;
+	height:500px;
+	width:500px;
+}
+video {
+	height:459px; 
+	width:650px;
+}
+
+
+
+
+

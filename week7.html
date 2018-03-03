@@ -1,14 +1,52 @@
 <!-- Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events -->
-
+<!-- onchange	An HTML element has been changed
+onclick	The user clicks an HTML element
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onkeydown	The user pushes a keyboard key
+onload	The browser has finished loading the page -->
 
 <!DOCTYPE HTML>
 <html>
-<body>
+<body onload = 'loaded()'>
 	<header>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</header>
 	<main>
-		<button id='buttonclick' onclick="buttonchange()">Click Me</button>
+
+		<h3>Mouse Over / Out </h3>
+		<div id = 'box'></div>
+
+		<h3>Keypress</h3>
+		<div id = boxC>
+			<input id= 'input' type='text'>
+		</div>
+
+		<h3>On Touch</h3>
+		<div id = boxD>
+		</div>
+
+		<h3>On Touch Move</h3>
+		<div id = boxG>
+		</div>
+
+		<h3>On Load</h3>
+		<div id = boxE>
+		</div>
+
+		<h3>On Change</h3>
+		<div id = boxF>
+			<select id = 'drop' onchange='changed()'>
+				<option value="Slytherin">Slytherin</option>
+				<option value="Gryffindor">Gryffindor</option>
+				<option value="Ravenclaw">Ravenclaw</option>
+				<option value="Hufflepuff">Hufflepuff</option>
+			</select>
+		</div>
+
+		<h3>On Click</h3>
+		<button onclick="reset()">Reset</button>
+
 	</main>
 	<footer>
 		<script src="week7.js"></script>

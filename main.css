@@ -73,20 +73,27 @@
 	margin:40px;
 }
 .transform {
+	height:100px;
+	width:100px;
+	background-color:pink;
 	animation: anni 4s infinite;
+	position: absolute;
+	left: 500px;
+	animation-direction:backwards;
 }
+
 @keyframes anni {
-	0% {top: 300px;}
-	10% {top:275px;}
-	20% {top: 250px;}
-	30% {top: 225px;}
-	40% {top: 200px;}
-	50% {top: 175px;}
-	60% {top: 150px;}
-	70% {top: 125px;}
-	80% {top: 100px;}
-	90% {top: 75px;}
-	100% {top: 50px;}
+	0% {top: 200px; background-color:orange;}
+	10% {top: 190px;}
+	20% {top: 180px;}
+	30% {top: 170px;}
+	40% {top: 160px;}
+	50% {top: 150px;}
+	60% {top: 140px;}
+	70% {top: 130px;}
+	80% {top: 120px;}
+	90% {top: 110px;}
+	100% {top: 90px;}
 }
 
 #canvas {
@@ -99,7 +106,83 @@ video {
 	width:650px;
 }
 
+.transitiondiv1:hover {
+	height:100px;
+	background-color:black;
+}
+.transitiondiv1 {
+	transition-property: height, background-color;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 1s;
+	height:300px;
+	background-color:purple;
+	width:300px;
+}
+.transitiondiv1 h2 {
+	padding:50px;
+}
 
+#behold:hover {
+	height:100px;
+	background-color:gray;
+}
+#behold {
+	transition-property: background-color;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 1s;
+	height:300px;
+	background-color:white;
+	width:300px;
+}
+#rabbit {
+	transform: scale(0.2,0.2);
 
+}
+.Alacazam {
+	transform: translateX(30px);
+	border: 2px solid black;
+	padding:30px;
+	height:500px;
+	width:500px;
+}
+.hat {
+	transform: rotate(35deg);
+	transform-origin: 10% 60%;
+}
 
+#whiterabbit {
+	height:200px;
+	width:auto;
+	z-index: -1;
+	position:absolute;
+	left: 220px;
+	animation: expecto 4s infinite;
+}
+#tophat {
+	position:absolute;
+}
+.prestoChango {
+	position: absolute;
+    display: flex;
+    flex-flow: wrap;
+    top: 100px;
+    right: 500px;
+    padding: 50px;
+    margin-top: 100px;
+}
 
+@keyframes expecto {
+	0% {top: 80px;}
+	10% {top: 60px;}
+	20% {top: 40px;}
+	30% {top: 20px;}
+	40% {top: 0px;}
+	50% {top: -20px;}
+	60% {top: -40px;}
+	70% {top: -60px;}
+	80% {top: -80px;}
+	90% {top: -100px;}
+	100% {top: -120px;}
+}

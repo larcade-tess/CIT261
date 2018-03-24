@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+    <header >
+        <h2>Feed Me</h2>
+        <button class="hamburger" onclick="hamburgermenu()">&#9776;</button>
+        <div class="topnav" id="topnavbar">
+            <nav class="navbar">
+                <ul>
+                    <li class="navigation"><a href="#">Home</a></li>
+                    <li class="navigation"><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div><h3>I'm thinking...</h3></div>
+        <div><h4>Cuisine</h4></div>
+        <select id='cuisine'>
+            <option value="mexican">Mexican</option>
+            <option value="italian">Italian</option>
+            <option value="indian">Indian</option>
+            <option value="chinese">Chinese</option>
+            <option value="american">American</option>
+            <option value="southern & soul food">Southern / Soul Food</option>
+            <option value="greek">Greek</option>
+        </select>
+        <div><h4>Course</h4></div>
+        <select id='course'>
+            <option value="soup">Soup</option>
+            <option value="salad">Salad</option>
+            <option value="main dishs">Main dish</option>
+            <option value="breads">Breads</option>
+            <option value="dessert">Dessert</option>
+            <option value="beverages">Beverages</option>
+        </select>
+        <button type="button" onclick='searchFood()'>Search Food</button>
+
+        <div id='displayO' class='hide'></div>
+    </main>
+    <footer>
+        <script src="js/food.js"></script>
+    </footer>
+</div>
+</body>
+</html>

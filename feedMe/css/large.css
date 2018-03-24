@@ -1,0 +1,26 @@
+@media only screen and (min-width: 992px) {
+
+    .hide {
+        display:none;
+    }
+    .hamburger {
+        display:none;
+    }
+    main {
+        margin:0;
+    }
+    body {
+        padding: 0% 10% 0% 10%;
+        background-color:#DC602E;
+    }
+    h1 {
+        font-size:50px;
+        padding-left: 50px;
+    }
+    h2 {
+        font-size:40px;
+    }
+    footer {
+        font-size:20px;
+    }
+}

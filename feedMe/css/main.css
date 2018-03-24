@@ -1,0 +1,89 @@
+html {-webkit-text-size-adjust: none;}
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color:green;
+    }
+    .hide {
+        display:none;
+    }
+
+    .hamburger { 
+        display: inline-flex;
+        top: 5.0rem;
+        left: 1.25rem; 
+        padding: 3px 12px;
+        font-size:30px;
+        margin-left:20px;
+    }
+    .navbar {
+        display:none;
+    }
+    body{
+        font-family: 'Yrsa', serif;
+        font-size:16px;
+    }
+    a {
+        color:black;
+        text-decoration:none;
+        font-weight:600;
+        font-family: 'Yrsa', serif;
+        font-size:20px;
+    }
+
+    h1 {
+        font-size: 35px;
+        font-family: 'Candal', sans-serif;
+        font-weight:700;
+        margin: 5px 20px;
+    }
+
+    p {
+        margin:10px;
+        font-family: 'Yrsa', serif;
+        font-size: 20px;
+    }
+    input, select {
+        margin:5px 0px 15px 0px;
+    }
+    .button {
+        background-color:#4A844A;
+        color:white;
+        text-align: center;
+        border-radius: 18px;
+        padding: 5px 47px;
+        font-family: 'Candal', sans-serif;
+        font-size:15px;
+        margin:5px 0px 5px 0px;
+
+    }
+    h4 {
+        font-family: 'Candal', sans-serif;
+        font-size:15px;
+        margin:5px 0px 5px 0px;
+    }
+    h3 {
+        font-family: 'Candal', sans-serif;
+        font-size:20px;
+        margin:5px 0px 5px 0px;
+    }
+    h2 {
+        font-family: 'Candal', sans-serif;
+        font-size:25px;
+    }
+
+    footer {
+        border-top:solid 1px black;
+        text-align:center;
+        bottom:0;
+        width:100%;
+        margin-top:40px;
+        font-size:15px;
+    }
+    .logo {
+        display:flex;
+        margin-bottom:15px;
+    }
+}

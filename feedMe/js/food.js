@@ -18,7 +18,7 @@ function findRecipes(cuisine, course){
 				console.log('here', jobj);
 
 				parent.innerHTML = ""; // Clear out previous recipes
-
+ 
 				for(var i=0; i < jobj.matches.length; i++){
 					var element = document.createElement('div');
 					var image = document.createElement('img');
@@ -28,7 +28,7 @@ function findRecipes(cuisine, course){
 					yummly = "https://www.yummly.com/#recipe/" + jobj.matches[i].id;
 					link.setAttribute("href", yummly);
 					link.append(recipe);
-					image.setAttribute("src", jobj.matches[i].smallImageUrls);
+					image.setAttribute("src", jobj.matches[i].imageUrlsBySize['90']);
 					element.append(image);
 					element.append(link);
 					parent.append(element);
@@ -55,3 +55,14 @@ function hamburgermenu() {
 }
 
 
+// var touchD = document.getElementsByClassName("responseive")[0];
+// touchD.addEventListener("touchstart", touchOn);
+
+// function touchOn(){
+// 	touchD.animate([
+// 		{ transform: 'translate(500px)' }, 
+// 		{ transform: 'translate(50px)' }
+// 		], {
+// 			duration: 1000,
+// 		});
+// }
